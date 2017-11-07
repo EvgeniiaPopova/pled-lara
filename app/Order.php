@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * App/Orders
+ * App/Order
  *
  * @package App
  * @property integer $id
@@ -15,12 +15,12 @@ use Illuminate\Database\Eloquent\Model;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  * @property integer $customer_id
- * @method \Illuminate\Database\Query\Builder|Orders whereId($value)
- * @method \Illuminate\Database\Query\Builder|Orders whereShipping($value)
+ * @method \Illuminate\Database\Query\Builder|Order whereId($value)
+ * @method \Illuminate\Database\Query\Builder|Order whereShipping($value)
  *
  *
  */
-class Orders extends Model
+class Order extends Model
 {
     /**
      * @var string
@@ -54,7 +54,7 @@ class Orders extends Model
      */
     public function order_items()
     {
-        return $this->hasMany('App\Order_items', 'order_id');
+        return $this->hasMany('App\Order_item', 'order_id');
     }
 
     /**

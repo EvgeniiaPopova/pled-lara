@@ -50,11 +50,11 @@ class Catalog extends Model
         'updated_at',
     ];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function order_items()
-    {
-        return $this->hasMany('App\Catalog', 'pled_id');
-    }
+//    /**
+//     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+//     */
+//    public function order_items()
+//    {
+//        return $this->hasMany('App\Catalog', 'pled_id');
+//    }
 }
