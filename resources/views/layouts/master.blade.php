@@ -15,8 +15,9 @@
 <!-- Mobile menu overlay mask -->
 
 @yield('content')
-
+@include('layouts.widget')
 @include('layouts.footer')
+
 <!-- End footer -->
 <div id="toTop"></div>
 <!-- Back to top button -->
